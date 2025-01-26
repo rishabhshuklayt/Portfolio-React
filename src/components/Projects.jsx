@@ -9,12 +9,12 @@ function Projects() {
             <h1>**Here's What I've Built**</h1>
         </div>
         <div className='flex flex-wrap flex-row justify-center'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card title={"CampusRoutes"} />
+        <Card title={"NFC-DigiMenu"}/>
+        <Card title={"Institute ERP - Freelance"}/>
+        <Card title={"DigiPass - A Gatepass Management System"}/>
+        <Card title={"Camping Booking"}/>
+        <Card title={"TaxiCO - Freelance"}/>
         </div>
         <div className='container mx-auto w-5/6 text-center bg-gray-200 rounded-lg'>
             <h1>Feel Free To Contribute And Fork Any Open Soruce Code As you please !!<button className='bg-black text-center text-white p-2 text-xs rounded-lg m-2 inline-flex items-center gap-2'>View More<FaArrowRightLong />

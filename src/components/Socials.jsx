@@ -26,11 +26,11 @@ function Socials() {
       <FaXTwitter />
     </a>
   </li>
-  <li>
+  {/* <li>
     <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
       <FaWhatsapp />
     </a>
-  </li>
+  </li> */}
       </ul>
     
   )

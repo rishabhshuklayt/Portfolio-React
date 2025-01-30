@@ -1,13 +1,13 @@
 import React from 'react'
 
 
-function BarCard() {
+function BarCard({place, title}) {
   return (
-    <div className='bg-gray-200 rounded-lg p-4'>
+    <div className='bg-gray-200 rounded-lg p-4 w-full sm:w-auto'>
         
-        <div>
-            <p className='text-xs font-light '>BSSITM</p>
-            <h1 className='font-light mt-2'>#1 Ranker in Internal Smart Indian Hackathon</h1>
+        <div className='w-full sm:w-auto'>
+            <p className='text-xs font-light '>{place}</p>
+            <h1 className='font-light mt-2 '>{title}</h1>
         </div>
         
     </div>

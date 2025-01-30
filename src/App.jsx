@@ -8,6 +8,9 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Achivements from './components/Achivements';
 import Certificates from './components/Certificates';
+import GoToTopButton from './components/GoToTopButton';
+import AdminLogin from './components/Admin/AdminLogin';
+import Dashboard from './components/Admin/Dashboard';
 function App() {
   return (
    <div >
@@ -28,7 +31,10 @@ function App() {
     <div id='section6'>
     <Contact /></div> 
     {/* will continue later */}
-    <Footer />
+    {/* <Footer />
+    <GoToTopButton /> 
+    {/* <AdminLogin />
+    <Dashboard /> */}
 
    </div>
   )

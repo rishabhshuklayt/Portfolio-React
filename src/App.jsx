@@ -31,10 +31,10 @@ function App() {
     <div id='section6'>
     <Contact /></div> 
     {/* will continue later */}
-    {/* <Footer />
+     <Footer />
     <GoToTopButton /> 
-    {/* <AdminLogin />
-    <Dashboard /> */}
+    <AdminLogin />
+    <Dashboard /> 
 
    </div>
   )

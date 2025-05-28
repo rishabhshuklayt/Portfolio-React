@@ -11,32 +11,23 @@ import Certificates from './components/Certificates';
 import GoToTopButton from './components/GoToTopButton';
 import AdminLogin from './components/Admin/AdminLogin';
 import Dashboard from './components/Admin/Dashboard';
+import HomePage from './pages/HomePage'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 function App() {
   return (
-   <div >
-    <Navbar />
-    <div className='h-screen' id='section1'>
-    <Home />
-    </div>
-    <div id='section2'>
-    <About />
-    </div>
-    <div id='section3'>
-    <Projects />
-    </div>
-    <div id='section4'>
-    <Achivements /></div>
-    <div id='section5'>
-    <Certificates /></div>
-    <div id='section6'>
-    <Contact /></div> 
-    {/* will continue later */}
-    {/* <Footer />
-    <GoToTopButton /> 
-    {/* <AdminLogin />
-    <Dashboard /> */}
-
-   </div>
+    <>
+     <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        
+        {/* Admin route */}
+        <Route path="/admin" element={<AdminLogin />} />
+        
+        {/* Redirect unknown routes to home */}
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </Router>
+   </>
   )
 }
 

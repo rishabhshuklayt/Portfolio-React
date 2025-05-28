@@ -35,8 +35,8 @@ function HomePage() {
     {/* will continue later */}
      <Footer />
     <GoToTopButton /> 
-     <AdminLogin />
-    <Dashboard /> 
+     {/* <AdminLogin />
+    <Dashboard />  */}
 
    </div>
     </div>

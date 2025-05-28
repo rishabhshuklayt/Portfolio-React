@@ -12,6 +12,7 @@ import GoToTopButton from './components/GoToTopButton';
 import AdminLogin from './components/Admin/AdminLogin';
 import Dashboard from './components/Admin/Dashboard';
 import HomePage from './pages/HomePage'
+import NotFound from './pages/NotFound';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
         <Route path="/admin" element={<AdminLogin />} />
         
         {/* Redirect unknown routes to home */}
-        <Route path="*" element={<Navigate to="/" />} />
+        {/* <Route path="*" element={<Navigate to="/" />} /> */}
+        <Route path="/login" element={<NotFound />} />
       </Routes>
     </Router>
    </>
